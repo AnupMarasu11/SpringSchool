@@ -11,7 +11,7 @@ import json
 
 if __name__ == "__main__":
     # Load simulation data
-    simulation = Simulation("src/data/simulations/children_1_tubes_6_id_23713.h5")
+    simulation = Simulation("data/simulations/children_1_tubes_6_id_23713.h5")
     
     # Define cost function
     #cost_function = B1HomogeneityCost()
@@ -24,5 +24,5 @@ if __name__ == "__main__":
     result = evaluate_coil_config(best_coil_config, simulation, cost_function)
 
     # Save results to JSON file
-    with open("results_SAR_400_CROP_Timeout.json", "w") as f:
+    with open("results_Test.json", "w") as f:
         json.dump(result, f, indent=4)

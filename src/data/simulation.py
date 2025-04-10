@@ -9,7 +9,7 @@ from .dataclasses import SimulationRawData, SimulationData, CoilConfig
 class Simulation:
     def __init__(self, 
                  path: str,
-                 coil_path: str = "src/data/antenna/antenna.h5"):
+                 coil_path: str = "data/antenna/antenna.h5"):
         self.path = path
         self.coil_path = coil_path
         
