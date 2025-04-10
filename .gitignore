@@ -1,8 +1,6 @@
-/.venv
-/data
-
-# python cache and compiled files
-**.pyc
-**.pyo
-**.pyd
+.venv/
+*.dll
+*.lib
 __pycache__/
+*.pyc
+*.pyo
